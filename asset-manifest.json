@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/nyx/static/css/main.003b41fc.css",
-    "main.js": "/nyx/static/js/main.84039f55.js",
+    "main.js": "/nyx/static/js/main.9b8ebddc.js",
     "static/js/787.504e9271.chunk.js": "/nyx/static/js/787.504e9271.chunk.js",
     "static/media/SuttonSignWritingOneD.ttf": "/nyx/static/media/SuttonSignWritingOneD.d165d00782e896e3d061.ttf",
     "static/media/NotoSerif.ttf": "/nyx/static/media/NotoSerif.b71e901e134b42c38925.ttf",
@@ -97,11 +97,11 @@
     "static/media/burstative-croacordal.mp3": "/nyx/static/media/burstative-croacordal.3b2919dde7e178f4cc6e.mp3",
     "index.html": "/nyx/index.html",
     "main.003b41fc.css.map": "/nyx/static/css/main.003b41fc.css.map",
-    "main.84039f55.js.map": "/nyx/static/js/main.84039f55.js.map",
+    "main.9b8ebddc.js.map": "/nyx/static/js/main.9b8ebddc.js.map",
     "787.504e9271.chunk.js.map": "/nyx/static/js/787.504e9271.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.003b41fc.css",
-    "static/js/main.84039f55.js"
+    "static/js/main.9b8ebddc.js"
   ]
 }
