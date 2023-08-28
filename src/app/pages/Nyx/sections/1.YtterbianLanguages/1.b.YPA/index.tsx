@@ -41,7 +41,8 @@ const Play = ({
   }, [isPlaying]);
 
   React.useEffect(() => {
-    if (isSelected && !isPlaying) {
+    if (isSelected && ref.current) {
+      ref.current.currentTime = 0;
       setIsPlaying(true);
     }
   }, [isSelected, isPlaying, altLetter]);
