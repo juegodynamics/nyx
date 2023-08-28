@@ -3,8 +3,13 @@ import {createTheme, ThemeProvider} from '@mui/material/styles';
 import Page from './app/nav';
 import Nyx from './app/pages/Nyx';
 
-const PRIMARY = '#93D7FF';
-const SECONDARY = '#E32D91';
+const PRIMARY = '#ED80BD';
+const SECONDARY = '#6dc3f5';
+
+// const textPadding = {
+//   paddingLeft: '200px',
+//   paddingRight: '200px',
+// };
 
 const theme = createTheme({
   palette: {
@@ -38,6 +43,9 @@ const theme = createTheme({
     ].join(','),
     body1: {
       textIndent: '16pt',
+      textAlign: 'justify',
+      textJustify: 'inter-word',
+      // ...textPadding,
     },
     h1: {
       textIndent: '0pt',
@@ -47,6 +55,7 @@ const theme = createTheme({
       borderBottom: `1px ${SECONDARY} solid`,
       paddingBottom: '10pt',
       marginBottom: '10pt',
+      // ...textPadding,
     },
     h2: {
       textIndent: '0pt',
@@ -55,6 +64,15 @@ const theme = createTheme({
       color: '#ED80BD',
       marginTop: '5pt',
       marginBottom: '5pt',
+      // ...textPadding,
+    },
+    h3: {
+      textIndent: '0pt',
+      fontSize: '18pt',
+      marginTop: '5pt',
+      marginBottom: '5pt',
+      color: '#f545a6',
+      // ...textPadding,
     },
   },
 });

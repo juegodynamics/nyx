@@ -28,3 +28,7 @@ code {
   font-family: "SuttonSignWritingOneD";
   src: url('https://unpkg.com/@sutton-signwriting/font-ttf@1.0.0/font/SuttonSignWritingOneD.ttf') format('truetype');
 }
+@font-face {
+  font-family: "Noto Serif";
+  src: url('https://fonts.googleapis.com/css2?family=Noto+Serif');
+}
