@@ -1,0 +1,114 @@
+My prompt format:
+  Department & Title: I provide the name of a fictional department and a title for a role/profession within that field.
+  Course Descriptions: I list course descriptions associated with the department.
+Your response format:
+  Coursework Overview: A concise summary of the courses, letting the reader know what being a student in this department is like. The summary highlights the progression a student makes while making their way through these courses. Always try to reach four sentences but no more. First sentence should include the department name.
+  Role Description: A depiction of the role's significance, particularly concerning interactions with the Nyxi. Describe how the role is crucial in enabling humans to collaborate, benefit, or even simply reach the Nyxi. Always try to reach four sentences but no more.
+  
+  Remember, your response tone should be deeply fascinating and engaging for the reader, but more importantly should sound very academic and appropriate for a textbook. Make sure your language isn't too flowery or overly metaphorical; it should be exceptionally straightforward to understand, but also very entertaining.
+
+Prompt:
+  Department:
+  Title:
+  Course Descriptions:
+    -
+
+--------------------------------------------------------------------------------------------------------
+My prompt format:
+  Department & Title: I provide the name of a fictional department and a title for a role/profession within that field.
+  Course Descriptions: I list course descriptions associated with the department.
+Your response format:
+  Coursework Overview: A concise summary of the courses, letting the reader know what being a student in this department is like. The summary highlights the progression a student makes while making their way through these courses. Always try to reach four sentences but no more. First sentence should include the department name.
+  Role Description: A depiction of the role's significance, particularly concerning interactions with the Nyxi. Describe how the role is crucial in enabling humans to collaborate, benefit, or even simply reach the Nyxi. Always try to reach four sentences but no more.
+  
+  Remember, your response tone should be deeply fascinating and engaging for the reader, but more importantly should sound very academic and appropriate for a textbook. Make sure your language isn't too flowery or overly metaphorical; it should be exceptionally straightforward to understand, but also very entertaining.
+
+Prompt:
+  Department: Novomathics
+  Title: Novomathmetician
+  Course Descriptions:
+    - Exploration of the Nyxian numerical system, its base, and its historical development. Students will learn the symbolic representations, conversion techniques, and basic arithmetic operations.
+    - Dive into the study of shapes, sizes, properties, and dimensions of things in higher-dimensional Nyxian spaces. This course covers the basic to advanced properties of hyper-shapes and their practical applications.
+    - An introduction to the logic and algorithms specific to Nyxian mathematics. This course emphasizes computational efficiency, error handling, and Nyxian-specific problems.
+    - A comprehensive study of probability in the context of quantum mechanics, allowing students to model and predict Nyxian quantum phenomena with newfound precision.
+    - Understand the recursive nature of fractals in Nyxian mathematics, exploring both their theoretical foundations and practical applications in various fields like architecture, art, and natural phenomena.
+    - Dive into the mathematical models used to describe and resolve temporal anomalies. This course covers the mathematical techniques to predict and counteract paradoxical scenarios in time-based experiments.
+    - Study the art and science of encoding and decoding information in the Nyxian way. This course sheds light on historical and modern cryptographic techniques, emphasizing Nyxian unique mathematical principles.
+    - Delve into advanced mathematical techniques used to describe phenomena in curved spacetime environments, such as gravitational fields around massive celestial bodies or the warping effects near wormholes.
+    - An exploration of the properties of space that are preserved under continuous deformations. This course will delve into the Nyxian understanding of closeness, limits, and continuous transformations.
+    - A deep dive into the algebraic structures of the Nyxian mathematical system, focusing on groups, rings, fields, and their respective applications in various Nyxian technologies.
+    - Examine the foundational principles of logic from a Nyxian perspective, from basic propositional logic to advanced topics in predicate logic and set theory.
+    - Understand the limitations and capabilities of Nyxian computational devices. Explore the P-NP problem, computational hierarchies, and the challenges of solving problems in alien systems.
+    - Study the mathematical models of strategic interaction among rational Nyxian entities, encompassing evolutionary games, coalition formations, and multi-agent systems.
+    - Tackle the mathematical descriptions of how things change and evolve in the Nyxian universe, from simple linear equations to complex, nonlinear dynamics.
+    - Venture into the world of infinite sets, cardinalities, and ordinal numbers, all within the framework of Nyxian mathematical traditions. Understand the hierarchy of infinities and their implications in Nyxian cosmology.
+
+--------------------------------------------------------------------------------------------------------
+
+Before we move on, let's take a moment to flesh out the chemistry of tenebrivity (which by the way you don't need to always capitalize).  
+
+First, the Tenebrivic Model extends the Standard Model by introducing two new classes of particles: erebons and zophons. Their interaction is described by Quantum Tenebridynamics, or QTD. In QCD, quarks can have a "color charge" that can take one of three values: red, green, or blue. Analogously, in QTD, zophons can have an "essence charge" that can take one of four values: terra, aqua, ignis, and aether. In QCD, gluons mediate the interaction and can have many possible color states; similarly, in QTD the erebon mediates the interaction and can have many possible essence states.
+
+From this information so far, derive a complete theory of QTD.
+
+-----------
+
+
+We have finally figured out dark matter and its interaction force, now referred to as tenebrivity. Developed a full theory of Quantum Tenebridynamics (QTD). Start with the following information:
+
+Noxions are massive spin-1/4 particles, meaning that it takes a rotation of 1440 degrees to go back to its original state. Noxions also carry an essence charge; A noxion's essence can take one of four values: earth, air, fire, water. Similarly, an antinoxion can have four values: antiearth, antiair, antifire, and antiwater. Erebons are spin-1/2 particles that carry mixtures of two essences. Zophons are spin-1 particles that carry mixtures of three essences.
+
+nyxi-
+sele-
+chaya-
+erebo-
+manime-
+marane-
+ratre-
+hadesi-
+tsuki-
+osiri-
+lilithi-
+khali-
+lunari-
+astroni-
+ombri-
+nocti-
+shadoni-
+kekuli-
+stellabi-
+echoni-
+phasmi-
+parodi-
+reflecti-
+mimicri-
+chroni-
+tempori-
+menti-
+eoni-
+spectri-
+wraithi-
+wyverni-
+eeri-
+
+-gen
+-(n)us
+-eon
+-ium
+-ine
+-ane
+-ione
+
+       s           p                               d
+  +--------+ +--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+
+1 |Nyxi-gen| |        |        |        |        |        |        |        |        |        |        |
+  +--------+ +--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+
+2 |Sele-gen| |Chaya-us|Erebo-us|Manime-us|Marane-us|Ratre-us|Hadesi-us|Tsuki-us|        |        |        |
+  +--------+ +--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+
+3 |Osiri-gen| |Lilithi-us|Khali-us|Lunari-us|Astroni-us|Ombri-us|Nocti-us|Shadoni-us|Kekuli-eon|Stellabi-eon|Echoni-eon|
+  +--------+ +--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+
+4 |Phasmi-gen| |Parodi-us|Reflecti-us|Mimicri-us|Chroni-us|Tempori-us|Menti-us|Eoni-us|Spectri-eon|Wraithi-eon|Wyverni-eon|
+  +--------+ +--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+
+5 |Eeri-gen  | |        |        |        |        |        |        |        |        |        |        |
+  +--------+ +--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+
+\bar{u}_\bar{s}, \bar{u}_\bar{v}, \bar{u}_\bar{c}

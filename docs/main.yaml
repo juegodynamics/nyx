@@ -1,0 +1,87 @@
+- part: Introduction
+  chapters:
+    - chapter: Nyxophora at a Glance
+      sections:
+        - section: The Planet Nyx
+        - section: The Nyxi Beings
+        - section: The Nysian Language
+    - chapter: First Encounter
+      sections:
+        - section: Approached by the Nyxi
+        - section: Nyxi and Humanity's Exchange
+    - chapter: The Ambassadorial Program
+- part: Nyxian Taxonomies
+  chapters:
+    - chapter: Galaxies
+      sections:
+        - section: Nyxophora
+        - section: Fugiclude
+    - chapter: The Nyxian Worlds
+      sections:
+        - section: Lystranyx
+        - section: Ombranyx
+        - section: Skotonyx
+        - section: Cryptonyx
+    - chapter: The Nyxi
+      sections:
+        - section: Biology
+        - section: Clades
+        - section: Society
+        - section: Architecture
+- part: Nysian
+  chapters:
+    - chapter: Phonology
+      sections:
+        - section: Physiology
+    - chapter: Orthography
+    - chapter: Syntax
+    - chapter: Semantics
+    - chapter: Translation
+- part: Expatriation
+  chapters:
+    - chapter: Traveling to Nyx
+    - chapter: Living on Nyx
+    - chapter: Nyxian Culture
+- part: Nyxian-Derived Sciences
+  chapters:
+    - chapter: Physics of Tenebrivity and Aliquantics
+- part: Nyxian-Derived Technologies
+  chapters:
+    - chapter: Astronautics
+    - chapter: Superliminality
+    - chapter: Xenobiology
+# # Tenebrichemical Engineering
+# # Superluminal and Interstellar Engineering
+# # Xenophonologic Production
+# # Contraparadoxical Engineering
+# # Exotic Matter Science and Engineering
+# # Vermiforamenic Medical Engineering
+# # Enviroadaptive Habitation
+# # Nyxian Architecture
+# # Nyxian Sociology
+# # Exonutrimental Gastronomy
+# # Exoplanetary Geography and Climate Acclimatization
+# # Intergalactic Economics
+# # Nyxian History
+# # Nysian Language
+# # Nyxi-Human Relations
+# # Extraterrestrial Ethics and Philosophy
+# # Cosmic Extradition and Law
+# # Intersentiental Psychology and Behavior
+
+# # Xenobiology and Nebugenomics
+# # Exoneuroscience and Polyphrenic Consciousness
+# # Galactostructural and Exoplanetary Sciences
+# # Novomathics and Transaxiomatic Computational Informatics
+
+# {
+#   "parts": [
+#     {
+#       "part": "Introduction",
+#       "chapters": [
+#         {"chapter": "Nyxophora at a Glance"},
+#         {"chapter": "First Encounter"}
+#       ]
+#     }
+#   ]
+# }
