@@ -488,8 +488,12 @@
 
 \usepackage{fontspec,unicode-math}
 
-\usepackage{yfonts}
+\newfontfamily{\noto}{Noto Serif}[
+  Scale = 0.9
+]
 
+\usepackage{yfonts}
+\usepackage{mathtools}
 \usepackage{mwe}
 \usepackage{graphbox}
 \usepackage{multirow}
@@ -652,3 +656,11 @@ X_{\nu}
   \right)
 }
 
+\newcommand{\xenostrength}{\text{\noto Ж}}
+\newcommand{\thustrength}{\text{\noto Ꚗ}}
+
+\newcommand{\set}[1]{\left\{#1\right\}}
+\newcommand{\half}{\frac{1}{2}}
+
+% \newcommand{\tindexone}{\text{\noto ѫ}}
+% \newcommand{\tindextwo}{\text{\noto ѯ}}

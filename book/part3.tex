@@ -95,6 +95,45 @@ But perhaps, even more significant than the technological renaissance, was the a
 
 In retrospection, the collaboration with the Nyxi wasn't merely an exchange of knowledge. It represented an intermingling of cosmic perspectives and a mutualistic journey towards unraveling the enigmas of existence. Through shared endeavor, the universe became less opaque, its mysteries slightly less mystifying, ushering in the Tenebrivic Epoch — a period of enlightenment, progress, and infinite possibilities.
 
+\begin{table}[ht]\label{QTDInteractions}
+  \centering
+  \begin{tabular}{c c c l}
+    \toprule
+    \multicolumn{4}{c}{\footnotesize \textbf{Interaction}}              \\
+    \midrule
+    \textbf{nxn}
+     & \qtdint[0.1]{xlb-bw-nxn}
+     & \qtdint[0.1]{xlb-cl-nxn}
+     & \(\nox{a} + \antinox{a} \rightarrow \xen\)                       \\
+    \textbf{nvn}
+     & \qtdint[0.1]{xlb-bw-nvn}
+     & \qtdint[0.1]{xlb-cl-nvn}
+     & \(\nox{a} + \antinox{b} \rightarrow \van{a}{b}\)                 \\
+    \textbf{v3}
+     & \qtdint[0.1]{xlb-bw-v3}
+     & \qtdint[0.1]{xlb-cl-v3}
+     & \(\van{a}{b} + \van{c}{a} \rightarrow \van{c}{b}\)               \\
+    \textbf{v4}
+     & \qtdint[0.1]{xlb-bw-v4}
+     & \qtdint[0.1]{xlb-cl-v4}
+     & \(\van{a}{b} + \van{c}{a} \rightarrow \van{d}{b} + \van{c}{d} \) \\
+    \textbf{nvt}
+     & \qtdint[0.1]{xlb-bw-nvt}
+     & \qtdint[0.1]{xlb-cl-nvt}
+     & \(\nox{a} + \van{b}{c} \rightarrow \thu{a}{c}{b}  \)             \\
+    \textbf{tvt}
+     & \qtdint[0.1]{xlb-bw-tvt}
+     & \qtdint[0.1]{xlb-cl-tvt}
+     & \(\thu{a}{b}{c} + \antithu{a}{b}{d} \rightarrow \van{c}{d}  \)   \\
+    \textbf{txt}
+     & \qtdint[0.1]{xlb-bw-txt}
+     & \qtdint[0.1]{xlb-cl-txt}
+     & \(\thu{a}{b}{c} + \antithu{a}{b}{c} \rightarrow \xen  \)         \\
+    \bottomrule
+  \end{tabular}
+  \caption{Summary of Interactions in QTD}
+\end{table}
+
 \section{Symmetries}
 Every field theory of particle physics is based on certain symmetries of nature whose existence is deduced from observations. The group symmetry U(1) \texttimes SU(4) corresponds to the local symmetry whose gauging gives rise to QTD\@. Symmetries are so crucial to field theories because each symmetry is associated with a the conservation of some physical observable. Throughout QTD, we will see that the conserved property is tenebridge.
 
@@ -204,20 +243,34 @@ SU(4) symmetry arises from the interactions between the noxions (one-tenebridge-
   One thing you might notice is that internally, the flow and spark tenebridgials are exchanged forward and then backward in time, effectively forming their own local time loops. This will behavior will become crucial in the understanding of contraparadoxical technologies.
 \end{example}
 
-\section{Field Theory}
+
 To get started constructing our field theory, we need to establish the field representation of each particle, and the end goal is to build up the Lagrangian \(\mathcal{L}_{\text{QTD}}\), which can derive the dynamics of our fields by considering the energy terms associated with each particle and their interactions. This is no small feat; this section will simply present the solutions, as a full derivation would go well beyond this introductory review.
 
-\subsection{Noxion Field}
-Let's start with building the field representation of the noxion. Since we know the noxion is a spin-1/2 particle, it will behave as a Dirac spinor. Additionally, we need to represent any linear combination of the four tenebridgials; let's do this by defining \(\Psi\) to denote an arbitrary linear combination of tenebridgials:
+\section{Noxion Field}
+Let's start with building the field representation of the noxion. Since we know the noxion is a spin-1/2 particle, it will behave as a Dirac spinor. Additionally, we need to represent the four tenebridgials
 \begin{definition}[Noxion Field Basis]
-  \[\Psi_{\alpha} = \tau_1 \Psi_1 + \tau_2 \Psi_2 + \tau_3 \Psi_3 + \tau_4 \Psi_4 \equiv
-    \begin{pmatrix}\tau_1 \\ \tau_2 \\ \tau_3 \\ \tau_4 \end{pmatrix}\]
-  where \(\alpha\) runs from 1 to 4 to index the tenebridgial in the array \(\left[v, c, f, s \right]\).
+  Our indices will be:
+  \begin{itemize}
+    \item \(\alpha\) ranging from 0 to 3 for the spinor:\\
+          \(\left\{+\frac{1}{2}n,-\frac{1}{2}n,-\frac{1}{2}\bar{n},+\frac{1}{2}\bar{n} \right\}\)
+    \item \(\omega\) ranging from 0 to 3 for the tenebridge:\\
+          \(\set{v, c, f, s}\)
+  \end{itemize}
+  Then the Noxion field is represented by
+  \[
+    \Psi_{\alpha \omega} \equiv
+    \begin{pmatrix}
+      n_{\half,v}              & n_{\half,c}              & n_{\half,f}              & n_{\half,s}              \\
+      n_{-\half,v}             & n_{-\half,c}             & n_{-\half,f}             & n_{-\half,s}             \\
+      \bar{n}_{-\half,\bar{v}} & \bar{n}_{-\half,\bar{c}} & \bar{n}_{-\half,\bar{f}} & \bar{n}_{-\half,\bar{s}} \\
+      \bar{n}_{\half,\bar{v}}  & \bar{n}_{\half,\bar{c}}  & \bar{n}_{\half,\bar{f}}  & \bar{n}_{\half,\bar{s}}  \\
+    \end{pmatrix}
+  \]
 \end{definition}
 
 A tenebridge rotation can be expressed compactly by the action of an SU(4) matrix \(\sufour\) on the spinor \(\Psi\):
 \[
-  \Psi_{\alpha} \rightarrow \sufour_{\alpha\beta} \Psi_{\beta}
+  \Psi_{\alpha \omega} \rightarrow \sufour_{\alpha\beta} \Psi_{\beta \omega}
 \]
 
 \begin{definition}[SU(4) Basis]
@@ -443,18 +496,25 @@ One thing to watch out for however is that vanibrons are spin-1 particles, meani
     V^1_3(\mathbf{x})
   }
 \]
-If we are working with this field in a context where we need to consider spacetime transformations, then its sometimes helpful to fully index the field as
-\[
-  V^a_{\mu}(\mathbf{x}) = \fourvec{%
-    V^a_0(\mathbf{x})%
-  }{
-    V^a_1(\mathbf{x})
-  }{
-    V^a_2(\mathbf{x})
-  }{
-    V^a_3(\mathbf{x})
-  }
-\]
+If we are working with this field in a context where we need to consider spacetime transformations, then its sometimes helpful to fully index the field
+\begin{definition}[Vanibron Field]
+  The Vanibron Field is fully defined for the indices:
+  \begin{itemize}
+    \item \(a\) ranging from 1 to 15 for the basis state
+    \item \(\mu\) ranging from 0 to 3 for the \(\mu\)-th-dimension's component: \(\set{t, x, y, z}\)
+  \end{itemize}
+  Expanded this gives the form
+  \[
+    V^a_{\mu}(\mathbf{x}) =
+    \begin{pmatrix}
+      V_t^1 & V_t^2 & V_t^3 & V_t^4 & V_t^5 & \ldots \\
+      V_x^1 & V_x^2 & V_x^3 & V_x^4 & V_x^5 & \ldots \\
+      V_y^1 & V_y^2 & V_y^3 & V_y^4 & V_y^5 & \ldots \\
+      V_z^1 & V_z^2 & V_z^3 & V_z^4 & V_z^5 & \ldots
+    \end{pmatrix}
+  \]
+\end{definition}
+
 
 Since this is a vector field, the kinetic term of the Lagrangian isn't just a simple multivariable derivative -- we need to capture the derivative of each component in each direction. To do so, we would normally define a Field Strength Tensor
 
@@ -493,7 +553,7 @@ Now finally let's see how the field strength tensor \(\Phi^a_{\mu\nu}\) transfor
 \end{align*}
 The last two terms contain products of \(V^c_{\mu}\) and derivatives of \(\phi^b\). These terms aren't canceled by any term in our naive definition of \(\mho^a_{\mu \nu}\). In order to counteract those terms then, we must update our definition to introduce a new term:
 \begin{definition}[Vanibron Field Strength Tensor]
-  \[\mho^a_{\mu \nu} \equiv \partial{\mu}V^a_{\nu} - \partial{\nu}V^a_{\mu} + g_v \omega^{abc}V^{b}_{\mu}V^{c}_{\nu} \]
+  \[\mho^a_{\mu \nu} \equiv \partial_{\mu}V^a_{\nu} - \partial_{\nu}V^a_{\mu} + g_v \omega^{abc}V^{b}_{\mu}V^{c}_{\nu} \]
 \end{definition}
 
 Our Lagrangian then can be written correctly as:
@@ -578,18 +638,18 @@ The kinetic term of this Lagrangian can be derived much the same way as both the
 Let's define a field strength tensor for the vector portion of the field:
 \begin{definition}[Thuleon Field Strength Tensor]
   \[
-    \mathfrak{T}^{\eta}_{\mu \nu ; \tau \chi} = \partial_{\mu}\Theta^{\eta}_{\nu \tau \chi} - \partial_{\nu}\Theta^{\eta}_{\mu \tau \chi}
+    \thustrength^{\eta}_{\mu \nu ; \tau \chi} = \partial_{\mu}\Theta^{\eta}_{\nu \tau \chi} - \partial_{\nu}\Theta^{\eta}_{\mu \tau \chi}
   \]
 \end{definition}
 
 Following the same derivation of the Lagrangian by gauge invariance leads us to a free-particle Lagrangian which we can compose in two parts; the kinetic contribution from the tensor and spinor:
 \[
-  \mathcal{L}_{\text{thuleon}} = -\frac{1}{4}\mathfrak{T}^{\eta}_{\mu \nu ; \tau \chi}\gamma^{\eta} \mathfrak{T}^{\eta \mu \nu}_{ \tau \chi}
+  \mathcal{L}_{\text{thuleon}} = -\frac{1}{4}\thustrength^{\eta}_{\mu \nu ; \tau \chi}\gamma^{\eta} \thustrength^{\eta \mu \nu}_{ \tau \chi}
 \]
 
 and the gauge-invariance requirement that leads to the vanibron-interaction term:
 \[
-  \mathcal{L}_{\text{thu-van}} \overset{?}{=} - i g_{\eth} \bar{\Theta}^{\eta}_{\tau \chi} \gamma^{\mu}  \Omega^a V^a_{\mu}  \bar{\Theta}^{\eta}_{\tau \chi}
+  \mathcal{L}_{\text{thuleon-vanibron}} \overset{?}{=} - i g_{\text{tvt}} \bar{\Theta}^{\eta}_{\tau \chi} \gamma^{\mu}  \Omega^a V^a_{\mu}  \bar{\Theta}^{\eta}_{\tau \chi}
 \]
 except there's a problem with that Lagrangian as written.
 
@@ -610,13 +670,13 @@ Not every kind of thuleon can interact with every kind of vanibron, since tenebr
 
 Thinking through each case of the example above, we see that the vanibron interaction term will require a transformation matrix \(\tvtmat\) in order to restrict the coupling accordingly:
 \[
-  - i g_{\eth}
+  - i g_{\text{tvt}}
   \bar{\Theta}^{\eta}_{\mu \lambda \rho}
-  \gamma^{\mu}
+  \gamma^{\mu}_{\eta \kappa}
   \tvtmat
   \Omega^a
   V^a_{\mu}
-  \bar{\Theta}^{\eta}_{\mu \tau \chi}
+  \bar{\Theta}^{\kappa}_{\mu \tau \chi}
 \]
 
 
@@ -683,7 +743,7 @@ then the full form of \(\tvtmat\) can be formed by grabbing the indices from the
 There's yet another interaction we have yet to account for, which is the interaction between a single noxion, vanibron, and thuleon. Such an interaction term might look like:
 \[
   \beth^{a b c}_{d} \Upsilon_{\eta \kappa} \left(
-  g_{tvn}
+  g_{\text{tvn}}
   \bar{\Theta}^{\eta}_{\mu a b}
   \gamma^{\eta}
   \Omega^{d}
@@ -691,7 +751,7 @@ There's yet another interaction we have yet to account for, which is the interac
   \gamma^{\kappa}
   \Psi^{\kappa}_{c}
   +
-  g_{nvt}
+  g_{\text{nvt}}
   \bar{\Psi}^{\kappa}_{c}
   \gamma^{\kappa}
   \Omega^{d}
@@ -700,7 +760,7 @@ There's yet another interaction we have yet to account for, which is the interac
   \Theta^{\eta}_{\mu a b}
   \right)
 \]
-where the two terms represent the forward and reverse process both being possible, with rates determined by the coupling constants \(g_{tvn}\) and \(g_{nvt}\). Tenebridge conservation leads to the \(\beth^{a b c}_{d}\) term to ensure that only valid transformations occur. This can be derived following the transformation rules:
+where the two terms represent the forward and reverse process both being possible, with rates determined by the coupling constants \(g_{\text{tvn}}\) and \(g_{\text{nvt}}\). Tenebridge conservation leads to the \(\beth^{a b c}_{d}\) term to ensure that only valid transformations occur. This can be derived following the transformation rules:
 \begin{align*}
    & \begin{Bmatrix}
        t_{f \bar{c} s} & t_{c \bar{f} s} & t_{c \bar{s} f} \\
@@ -782,8 +842,8 @@ Then the various entries of \(\beth^{a b c}_{d}\) can be derived as:
 The thuleon not only has mass, but infamously the antithuleon has negative mass. Writing the lagrangian contribution for this is actually relatively straightforward:
 \begin{definition}[Thuleon Mass Lagrangian]
   \[
-    \mathcal{L}_{\text{thuleon-mass}} \equiv \mathfrak{m} \left(
-    \bar{\Theta}^{\eta}_{\tau \chi}\Theta^{\eta}_{\tau \chi} - \bar{\Theta}^{3-\eta}_{3-\tau,3-\chi}\Theta^{3-\eta}_{3-\tau,3-\chi}
+    \mathcal{L}_{\text{thuleon-mass}} \equiv \mathfrak{m} \delta_{\mu\nu} \left(
+    \bar{\Theta}^{\eta}_{\tau \chi}\Theta^{\eta}_{\mu \tau \chi} - \bar{\Theta}^{3-\eta}_{3-\tau,3-\chi}\Theta^{3-\eta}_{\nu,3-\tau,3-\chi}
     \right)
   \]
 \end{definition}
@@ -808,89 +868,138 @@ As mentioned previously, negative mass particles under the influence of a force 
 Since antithuleons accelerate due to gravitational repulsion, on average they follow Hubble's Law, which states that the recession velocity of distant objects is proportional to its distance from us:
 \[v=H_0 \times d\]
 
-The proportionality constant \(H_0\) is derived from experimental measurement, and the most recent value measured last in 4102 is 89 kilometers per second per Megaparsec (km/s/Mpc). The observable universe is roughly 46.5 billion light years, or 14,529 Megaparsecs. From Hubble's law then, we find that the fastest antithuleons in the known universe travel at a speed of
+The proportionality constant \(H_0\) is derived from experimental measurement, and the most recent value measured last in 4102 is 89 kilometers per second per Megaparsec (km/s/Mpc). The observable universe is roughly 46.5 billion light years, or 14,529 Megaparsecs. From Hubble's law then, we find that the fastest observable antithuleons in the observable universe travel at a speed of
 \begin{align*}
-  v & = (89 \text{km/s/Mpc}) \times (14,529 \text{Mpc})     \\
-    & \approx 1,269,051 \text{km/s (kilometers per second)} \\
+  v & = (89\ \text{km/s/Mpc}) \times (14,529\ \text{Mpc})    \\
+    & \approx 1,269,051\ \text{km/s (kilometers per second)} \\
     & \approx 4.23c
 \end{align*}
 
-Binding Energy: In quantum field theories, composite states, like hadrons in QCD, have binding energies. The introduction of negative mass components could make certain composite states have total energy lower than the sum of their individual constituent energies, leading to unphysical predictions.
-
-Interactions with Gravity: Incorporating such a theory in a gravitational context (e.g., within General Relativity) would yield strange outcomes. Negative mass would curve spacetime differently than positive mass. There are speculative ideas about "exotic matter" with negative energy densities in the context of wormholes and the Casimir effect, but introducing particles with negative mass would intensify these speculations.
-
-Antiparticle Behavior: While our matrix
-�
-M introduces negative mass for the antitrinebron, we should ask how this affects other properties. For instance, does the antitrinebron still respond to forces as we expect an antiparticle to? How does it interact with the other fields?
+Once we dive into the composite matter made out of our tenebrivic particles, we'll dive even deeper into the superliminal technologies that have been developed using antithuleons and further implications on causality and the need for contraparadoxical security measures.
 
 
-\begin{table}[ht]\label{QTDInteractions}
-  \centering
-  \begin{tabular}{c c c l l}
-    \toprule
-    \multicolumn{4}{c}{\footnotesize \textbf{Interaction}}
-     & \(\mathcal{L} \)
-    \\
-    \midrule
-    \textbf{nxn}
-     & \qtdint[0.1]{xlb-bw-nxn}
-     & \qtdint[0.1]{xlb-cl-nxn}
-     & \(\nox{a} + \antinox{a} \rightarrow \xen\)
-     & $\lagrangeNXN$
-    \\
-    \textbf{nvn}
-     & \qtdint[0.1]{xlb-bw-nvn}
-     & \qtdint[0.1]{xlb-cl-nvn}
-     & \(\nox{a} + \antinox{b} \rightarrow \van{a}{b}\)
-     & $\lagrangeNVN$
-    \\
-    \textbf{v3}
-     & \qtdint[0.1]{xlb-bw-v3}
-     & \qtdint[0.1]{xlb-cl-v3}
-     & \(\van{a}{b} + \van{c}{a} \rightarrow \van{c}{b}\)
-     & \multirow[c]{2}{*}{\raisebox{-20pt}{$\lagrangeVan$ \text{(*the $c_{v}$ term)}} }
-    \\
-    \textbf{v4}
-     & \qtdint[0.1]{xlb-bw-v4}
-     & \qtdint[0.1]{xlb-cl-v4}
-     & \(\van{a}{b} + \van{c}{a} \rightarrow \van{d}{b} + \van{c}{d} \)
-    \\
-    \textbf{nvt}
-     & \qtdint[0.1]{xlb-bw-nvt}
-     & \qtdint[0.1]{xlb-cl-nvt}
-     & \(\nox{a} + \van{b}{c} \rightarrow \thu{a}{c}{b}  \)
-     & $\lagrangeNVT$
-    \\
-     &
-     &
-     &
-     & $+ \text{h.c.}$
-    \\
-    \textbf{tvt}
-     & \qtdint[0.1]{xlb-bw-tvt}
-     & \qtdint[0.1]{xlb-cl-tvt}
-     & \(\thu{a}{b}{c} + \antithu{a}{b}{d} \rightarrow \van{c}{d}  \)
-     & $\lagrangeTVT$
-    \\
-     &
-     &
-     &
-     & $+ \text{h.c.}$
-    \\
-    \textbf{txt}
-     & \qtdint[0.1]{xlb-bw-txt}
-     & \qtdint[0.1]{xlb-cl-txt}
-     & \(\thu{a}{b}{c} + \antithu{a}{b}{c} \rightarrow \xen  \)
-     & $\lagrangeTXT$
-    \\
-     &
-     &                                                                                  &
-     & $+ \text{h.c.}$
-    \\
-    \bottomrule
-  \end{tabular}
-  \caption{Summary of Interactions in QTD}
-\end{table}
+\section{Xenobron Field}
+Our last particle to discuss is the xenobron, a spin-1 massless boson that carries no tenebridge. As such you may be wondering, how is the xenobron distinguishable from the photon? In fact, the only distinguishing characteristic is that it interacts with tenebrivic particles and doesn't interact with electromagnetic particles! Fortunately though, the U(1) symmetry that this force is gauge invariant to looks just like Quantum Electrodynamics with one small adjustment.
+
+\begin{definition}[Xenobron Field]
+  Our Xenobron field is given by the vector field:
+  \[
+    \Xi_{\mu} = \fourvec{\Xi_0}{\Xi_1}{\Xi_2}{\Xi_3}
+  \]
+  where the index \(\mu\) ranges from 0 to 3 and represents the value of the \(\mu\)-th component of the vector.
+\end{definition}
+
+Since this is a vector field, again we define a field strength tensor:
+
+\begin{definition}[Xenobron Field Strength Tensor]
+  \[
+    \xenostrength_{\mu \nu} = \partial_{\mu} \Xi_{\nu}-\partial_{\nu} \Xi_{\mu}
+  \]
+\end{definition}
+
+Then the free particle Lagrangian looks like
+\[
+  \mathcal{L}_{\text{xenobron}} = -\frac{1}{4}\xenostrength_{\mu \nu}\xenostrength^{\mu \nu}
+\]
+
+The interaction with the noxion
+\begin{center}
+  \includegraphics[width=0.3\textwidth]{tenebrivity/cl-nxn.png}
+\end{center}
+looks like
+\[
+  \mathcal{L}_{\text{xenobron-noxion}} = -g_{\text{nxn}}\delta_{\omega\rho}\bar{\Psi}_{\alpha\omega}\gamma^{\mu}_{\alpha\beta}\Psi_{\beta\rho}\Xi_{\mu}
+\]
+The main difference between this interaction and the photon-electron one is that this Lagrangian has the added term \(\delta_{\omega\rho}\), specifically to enforce that the tenebridge of the involved noxion does not change.
+
+There is just one interaction remaining; the xenobron-thuleon interaction:
+The interaction with the noxion
+\begin{center}
+  \includegraphics[width=0.3\textwidth]{tenebrivity/cl-txt.png}
+\end{center}
+This can also be constructed just like the QED lagrangian, with the additional constraints on conserving tenebridge.
+\[
+  \mathcal{L}_{\text{xenobron-thuleon}} =
+  -g_{\text{txt}}
+  \delta_{\sigma\tau}
+  \delta_{\xi\chi}
+  \bar{\Theta}^{\eta}_{\mu \sigma \xi}
+  \gamma^{\mu}_{\eta\kappa}
+  \bar{\Theta}^{\kappa}_{\mu \tau \chi}
+  \Xi_{\mu}
+\]
+
+\section{Complete Lagrangian}
+It is now time to write the complete Lagrangian of Quantum Tenebridynamics!
+\begin{align*}
+  \mathcal{L}_{\text{QTD}}
+   & =
+  %== Noxion Free Particle
+  \overbracket{
+    i \bar{\Psi}_{\alpha\omega}
+    \gamma^{\mu}_{\alpha\beta}
+    \partial_{\mu}
+    \Psi_{\beta\omega}
+  }^{\mathcal{L}_{\text{noxion}}}
+  %== Noxion-Vanibron Interaction
+  + \overbracket{
+    g_{\text{nvn}}\bar{\Psi}_{\alpha\omega}
+    \gamma^{\mu}_{\alpha\beta}
+    V^{a}_{\mu}
+    \Omega^{a}
+    \Psi_{\beta\omega}
+  }^{\mathcal{L}_{\text{noxion-vanibron}}} -
+  \overbracket{
+  \tfrac{1}{4}
+  \mho^a_{\mu \nu}
+  \mho^{a \mu \nu}
+  }^{\mathcal{L}_{\text{vanibron}}}                                                                            \\
+   & -\overbracket{
+    \tfrac{1}{4}
+    \delta_{\sigma\tau}
+    \delta_{\xi\chi}
+    \thustrength^{\eta}_{\mu \nu ; \sigma \xi}
+    \gamma^{\eta}
+    \thustrength^{\eta \mu \nu}_{ \tau \chi}
+  }^{\mathcal{L}_{\text{thuleon}}}
+  - \overbracket{ i g_{\text{tvt}}
+  \bar{\Theta}^{\eta}_{\mu \lambda \rho}
+  \gamma^{\mu}_{\eta \kappa}
+  \tvtmat
+  \Omega^a
+  V^a_{\mu}
+  \bar{\Theta}^{\kappa}_{\mu \tau \chi}
+  }^{\mathcal{L}_{\text{thuleon-vanibron}}}                                                                    \\
+   & + \overbracket{ \beth^{a b c}_{d} \Upsilon_{\eta \kappa} \left(
+    g_{\text{tvn}}
+    \bar{\Theta}^{\eta}_{\mu a b}
+    \gamma^{\mu}_{\eta\kappa}
+    \Psi_{\kappa c}
+    \Omega^{d}
+    V^{d}_{\mu}
+    +
+    g_{\text{nvt}}
+    \bar{\Psi}_{\kappa c}
+    \gamma^{\mu}_{\eta\kappa}
+    \Theta^{\eta}_{\mu a b}
+    \Omega^{d}
+    \bar{V}^{d}_{\mu}
+  \right)}^{\mathcal{L}_{\text{noxion-vanibron-thuleon}}}                                                      \\
+   & +\overbracket{\mathfrak{m} \delta_{\mu\nu} \left(
+    \bar{\Theta}^{\eta}_{\mu \tau \chi}\Theta^{\eta}_{\mu \tau \chi} - \bar{\Theta}^{3-\eta}_{\nu,3-\tau,3-\chi}\Theta^{3-\eta}_{\nu,3-\tau,3-\chi}
+  \right)}^{\mathcal{L}_{\text{thuleon-mass}}}                                                                 \\
+   & -\overbracket{\tfrac{1}{4}\xenostrength_{\mu \nu}\xenostrength^{\mu \nu}}^{\mathcal{L}_{\text{xenobron}}}
+  -\overbracket{g_{\text{nxn}}\delta_{\omega\rho}\bar{\Psi}_{\alpha\omega}\gamma^{\mu}_{\alpha\beta}\Psi_{\beta\rho}\Xi_{\mu}}^{\mathcal{L}_{\text{xenobron-noxion}}}
+  -\overbracket{
+    g_{\text{txt}}
+    \delta_{\sigma\tau}
+    \delta_{\xi\chi}
+    \bar{\Theta}^{\eta}_{\mu \sigma \xi}
+    \gamma^{\mu}_{\eta\kappa}
+    \bar{\Theta}^{\kappa}_{\mu \tau \chi}
+    \Xi_{\mu}
+  }^{\mathcal{L}_{\text{xenobron-thuleon}}}
+\end{align*}
 
 
 
